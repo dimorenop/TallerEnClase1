@@ -11,21 +11,21 @@ package TallerEnClase1;
  * @email cychitivav@unal.edu.co
  */
 public class LibraryCard {
-    private Student owner = new Student;
+    private String owner = this.toString();
     private int borrowCnt = 0;
 
-    public Student getOwnerName() {
+    public String getOwner() {
         return owner;
     }
 
-    public int getNumberOfBooks() {
+    public int getBorrowCnt() {
         return borrowCnt;
     }
 
-    public void setOwner(Student owner) {
+    public void setOwner(String owner) {
         this.owner = owner;
     }
-    
+
     @Override
     public String toString() {
         return "LibraryCard{" + "owner=" + owner + '}';
