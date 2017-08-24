@@ -16,6 +16,11 @@ public class TallerEnClase1 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Student student;
+        student = new Student ("Jon Java", "jj@javauniv.edu");
+        
+        LibraryCard card1 = new LibraryCard(student, 3);
+        LibraryCard card2 = new LibraryCard(student, 0);           
     }
     
 }

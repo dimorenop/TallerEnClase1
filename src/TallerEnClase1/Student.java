@@ -10,10 +10,12 @@ package TallerEnClase1;
  * @author Estudiante
  */
 public class Student {
-    private String name;
-    private String email;
+    private String name = null;
+    private String email = null;
     
-    private Student(){
+    Student(String name, String email){
+        this.name = name;
+        this.email = email;
     }
 
     public String getName() {
@@ -31,8 +33,4 @@ public class Student {
     public void setEmail(String email) {
         this.email = email;
     }
-    
-    
-    
-    
 }

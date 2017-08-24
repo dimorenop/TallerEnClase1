@@ -11,10 +11,15 @@ package TallerEnClase1;
  * @email cychitivav@unal.edu.co
  */
 public class LibraryCard {
-    private String owner = this.toString();
+    private Student owner = null;
     private int borrowCnt = 0;
 
-    public String getOwner() {
+    public LibraryCard(Student owner, int borrowCnt) {
+        this.owner = owner;
+        this.borrowCnt = borrowCnt;
+    }
+
+    public Student getOwner() {
         return owner;
     }
 
@@ -22,7 +27,7 @@ public class LibraryCard {
         return borrowCnt;
     }
 
-    public void setOwner(String owner) {
+    public void setOwner(Student owner) {
         this.owner = owner;
     }
 
